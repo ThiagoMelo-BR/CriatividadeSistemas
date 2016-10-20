@@ -5,12 +5,20 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
+    <style type="text/css">
+        .auto-style1 {
+            font-size: medium;
+        }
+    </style>
 </head>
 <body>
     <form id="form1" runat="server">
     <div>
     
-        <h1 style="font-size: xx-large">SISTEMA GERENCIADOR<br />
+        <h1 style="font-size: xx-large">SISTEMA GERENCIADOR</h1>
+        <h1 style="font-size: xx-large"><span class="auto-style1"><br />
+            <asp:Label ID="lblUsuarioLogado" runat="server"></asp:Label>
+            </span>
         <br />
         <br />
         <asp:Button ID="btnCadPessoas" runat="server" Text="Cadastro de Pessoas" OnClick="btnCadPessoas_Click" />

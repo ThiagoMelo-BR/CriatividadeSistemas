@@ -39,7 +39,7 @@ namespace Sistema.Helper
 
             table.Rows.Add(registro);
         }
-        public static DataSet GetDataSet(List<Object> lista, Object _object)
+        public static DataSet GetDataSet<T>(List<T> lista, Object _object)
         {
             var _dataset = new DataSet();
             var tabela = HelperDB.GetColumnsTable(_object);

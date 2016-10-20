@@ -23,7 +23,11 @@ public partial class Login : System.Web.UI.Page
         usuario.Senha = txtSenha.Text;
 
         if (usuarioBLL.ValidarUsuario(usuario))
+        {
+            Session["UsuarioLogado"] = usuario;
             FormsAuthentication.RedirectFromLoginPage("Login", false);
+            Response.Redirect("Default.aspx");
+        }
         else
             lbMsg.Text = "Usuário ou senha incorretos!";
 

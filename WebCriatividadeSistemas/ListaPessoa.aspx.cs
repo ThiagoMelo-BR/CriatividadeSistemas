@@ -25,8 +25,7 @@ public partial class _Default : System.Web.UI.Page
     }
     private DataSet SelecionarPessoas()
     {
-        //return HelperDB.GetDataSet(oPessoaBLL.Select(),pessoa);
-        return oPessoaBLL.GetDataSet();
+        return HelperDB.GetDataSet(oPessoaBLL.Select(),pessoa);        
     }
     private void CarregarPessoas()
     {

@@ -27,7 +27,7 @@
         <br />
         <br />
         Data Nascimento<br />
-        <asp:TextBox ID="txtDataNascimento" runat="server" TextMode="Date"></asp:TextBox>
+        <asp:TextBox ID="txtDataNascimento" runat="server"></asp:TextBox>
         <br />
         <br />
         <asp:Label ID="lblMsg" runat="server" ForeColor="#FF3300"></asp:Label>

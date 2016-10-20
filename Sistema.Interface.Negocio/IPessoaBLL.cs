@@ -11,7 +11,6 @@ namespace Sistema.Interface.Negocio
         void Update(Pessoa pessoa);
         List<Pessoa> Select();
         Pessoa Select(int Id);
-        DataSet GetDataSet();
         
     }
 }

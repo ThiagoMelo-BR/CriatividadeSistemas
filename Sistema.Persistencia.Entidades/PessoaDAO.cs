@@ -167,19 +167,6 @@ namespace Sistema.Persistencia.Entidades
             {
                 conexao.Close();
             }
-        }
-
-        public DataSet GetDataSet()
-        {
-            var dataSet = new DataSet();
-            var pessoa = new Pessoa();
-            var tabela = HelperDB.GetColumnsTable(pessoa);
-
-            foreach (var p in Select())
-                HelperDB.GetObjectRowTable(tabela, p);
-
-            dataSet.Tables.Add(tabela);
-            return dataSet;
-        }
+        }        
     }
 }

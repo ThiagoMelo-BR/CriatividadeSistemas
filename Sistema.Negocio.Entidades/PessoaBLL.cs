@@ -63,12 +63,7 @@ namespace Sistema.Negocio.Entidades
         public Pessoa Select(int Id)
         {
             return this._pessoaDAO.Select(Id);
-        }
-
-        public DataSet GetDataSet()
-        {
-            return this._pessoaDAO.GetDataSet();
-        }
+        }    
 
     }
 }

@@ -12,6 +12,5 @@ namespace Sistema.Interface.Persistencia
         List<Pessoa> Select();
         Pessoa Select(int Id);
         void Update(Pessoa pessoa);
-        DataSet GetDataSet();
     }
 }
